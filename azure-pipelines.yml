@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '$(AzureSubcriptionID)''
+  azureSubscription: '$(AzureSubcriptionID)'
 
   # Function app name
   functionAppName: 'team-assignment'
