@@ -1,6 +1,6 @@
 using System;
 
-namespace TeamGenerator
+namespace TeamAssignment
 {
     public class WeatherForecast
     {
