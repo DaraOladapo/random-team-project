@@ -1,8 +1,64 @@
-﻿@{
+﻿@model FrontEnd.Models.FormModel
+@{
     ViewData["Title"] = "Home Page";
+    var teamsAndPeople = ViewBag.Teams as List<Team>;
 }
 
-<div class="text-center">
+<div class="text-left">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Let's get your name.</p>
+    <form asp-action="Index"  asp-controller="Home" method="post">
+        <label asp-for="@Model.Name"></label>
+        <input asp-for="@Model.Name" placeholder="Your name goes here" />
+        <input type="submit" />
+    </form>
+
+</div>
+<div class="row">
+    <h2>All Teams and Assignments</h2>
+    <div class="col-12">
+        <table class="table table-sm table-striped table-hover border-bottom">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Team
+                    </th>
+                    <th class="d-none d-md-table-cell">
+                        Lucky Number
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @if (teamsAndPeople.Count > 0)
+                {
+                    foreach (var item in teamsAndPeople)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TeamName)
+                            </td>
+                            <td class="d-none d-lg-table-cell">
+                                @Html.DisplayFor(modelItem => item.LuckyNumber)
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            There was no data found.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

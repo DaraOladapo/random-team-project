@@ -28,7 +28,7 @@ namespace TeamAssignment.Controllers
         public async Task<ActionResult<Team>> Post([FromBody] string name)
         {
             var teamName = await new HttpClient().GetStringAsync($"{Configuration.TeamGeneratorServiceURL}/teamgenerator/team");
-            var luckyNumber = await new HttpClient().GetStringAsync($"{Configuration.LuckNumberServiceURL}");
+            var luckyNumber = await new HttpClient().GetStringAsync($"{Configuration.LuckyNumberServiceURL}");
             var createdTeam = Repository.Teams.Create(new Team()
             {
                 Name = name,
@@ -39,7 +39,7 @@ namespace TeamAssignment.Controllers
             return Ok(createdTeam);
 
         }
-        [HttpGet("GetAll")]
+        [HttpGet("Get-All")]
         public ActionResult<IEnumerable<Team>> GetAll()
         {
             return Repository.Teams.FindAll().ToList();;
