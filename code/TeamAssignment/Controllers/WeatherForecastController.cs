@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace TeamGenerator.Controllers
+namespace TeamAssignment.Controllers
 {
     [ApiController]
     [Route("[controller]")]
