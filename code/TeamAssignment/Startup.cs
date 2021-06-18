@@ -14,6 +14,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using TeamAssignment.Data;
 using Microsoft.EntityFrameworkCore;
+using TeamAssignment.Interfaces;
+using TeamAssignment.Respositories;
 
 namespace TeamAssignment
 {
@@ -42,6 +44,7 @@ namespace TeamAssignment
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TeamAssignment", Version = "v1" });
             });
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
