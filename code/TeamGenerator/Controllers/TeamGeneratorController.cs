@@ -9,7 +9,7 @@ namespace TeamGenerator.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class TeamGeneratorController : ControllerBase
     {
         private static readonly string[] Teams = new[]
         {

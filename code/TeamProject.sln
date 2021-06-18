@@ -5,11 +5,11 @@ VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{92F0F4BB-BC46-4706-863F-86638D8B31C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyNumber", "LuckyNumber\LuckyNumber.csproj", "{5966873F-999D-49F2-B086-351D88A36FB7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamAssignment", "TeamAssignment\TeamAssignment.csproj", "{5C042489-3A35-49FE-AEC4-2556545FC12A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamGenerator", "TeamGenerator\TeamGenerator.csproj", "{E3C801EB-95A9-408D-86FC-69E667598A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuckyNumber", "LuckyNumber\LuckyNumber.csproj", "{D9E715D4-2A0F-47DA-B14D-7C72236552E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,5 +72,17 @@ Global
 		{E3C801EB-95A9-408D-86FC-69E667598A20}.Release|x64.Build.0 = Release|Any CPU
 		{E3C801EB-95A9-408D-86FC-69E667598A20}.Release|x86.ActiveCfg = Release|Any CPU
 		{E3C801EB-95A9-408D-86FC-69E667598A20}.Release|x86.Build.0 = Release|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Release|x64.Build.0 = Release|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{D9E715D4-2A0F-47DA-B14D-7C72236552E5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
