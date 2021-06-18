@@ -42,7 +42,7 @@ namespace TeamAssignment.Controllers
         [HttpGet("GetAll")]
         public ActionResult<IEnumerable<Team>> GetAll()
         {
-            throw new NotImplementedException();
+            return Repository.Teams.FindAll().ToList();;
         }
 
     }
