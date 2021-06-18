@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using TeamAssignment.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TeamAssignment
 {
@@ -33,6 +35,7 @@ namespace TeamAssignment
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRouting(r => r.LowercaseUrls = true);
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.Configure<AppSettings>(options => Configuration.GetSection("AppSettings").Bind(options));
             services.AddControllers();
             services.AddSwaggerGen(c =>
