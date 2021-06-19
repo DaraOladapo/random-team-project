@@ -1,1 +1,3 @@
-# random-team-project
+# Random Team Project
+
+## Architecture Diagram
