@@ -8,6 +8,7 @@ If you are to run the code contained in this repository as is, you would need to
 - Microsoft SQL Server with Windows Authentication(Developer Edition or Express works)
 - A code editor (Visual Studio or Visual Studio Code)
 
+Remember to run `dotnet ef database update` to update your database schema.
 ## Service Architecture
 
 ![Resources](./docs/service-architecture.png)
