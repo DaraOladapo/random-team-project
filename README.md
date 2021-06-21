@@ -1,5 +1,13 @@
 # Random Team Project
 
+## Setup
+
+If you are to run the code contained in this repository as is, you would need to have the following installed on your computer
+
+- .NET 5 SDK
+- Microsoft SQL Server with Windows Authentication(Developer Edition or Express works)
+- A code editor (Visual Studio or Visual Studio Code)
+
 ## Service Architecture
 
 ![Resources](./docs/service-architecture.png)
