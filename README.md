@@ -2,18 +2,18 @@
 
 ## Setup
 
-If you are to run the code contained in this repository as is, you would need to have the following installed on your computer
+If you are to run the code contained in this repository as is, you would need to have the following installed on your computer.
 
 - .NET 5 SDK
 - Microsoft SQL Server with Windows Authentication(Developer Edition or Express works)
 - A code editor (Visual Studio or Visual Studio Code)
 
-Remember to run `dotnet ef database update` to update your database schema.
+> Remember to run `dotnet ef database update` to update your database schema.
 ## Service Architecture
 
 ![Resources](./docs/service-architecture.png)
 
-The code sample contains the following services.
+The code sample contains the following services. Feel free to change any component to something you prefer.
 
 |Service|Azure Resource
 |---|---|
